@@ -1,0 +1,28 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+.python-version
+
+# Cache directories
+.pytest_cache/
+
+# Editor temp / swap files
+*.swp
+*.swo
+*.tmp
+*.bak
+*~
+.DS_Store
+.idea/
+.vscode/
+
+# Local SQLite database files
+*.db
+*.sqlite3
