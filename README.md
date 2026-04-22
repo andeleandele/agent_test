@@ -1,3 +1,11 @@
+How to Run
+    Install dependencies: pip install -r requirements.txt
+    Start the server: uvicorn src.main:app --reload
+    The API will be accessible at http://127.0.0.1:8000.
+
+Testing
+    Run tests using: pytest tests/test_users.py -v 2>&1 | tail -3
+
 Open Questions & TODOs
 
     This project intentionally contains some ambiguous aspects and open requirements, which may require clarification or extension:
