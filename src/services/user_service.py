@@ -2,8 +2,8 @@ from sqlalchemy.orm import Session
 from models.users import User as UserModel
 from schemas.user import UserCreate
 
+# TODO: Users should be deleted from DB (not just deactivated)
   
-
 def get_user(db: Session, user_id: int):
     return db.query(UserModel).filter(UserModel.id == user_id).first()
 
@@ -21,7 +21,6 @@ def delete_user(db: Session, user_id: int):
         db.commit()
     return db_user
 
-# TODO: Users should be deleted from DB (not just deactivated)
 
 def get_all_users(db: Session):
     return db.query(UserModel).all()

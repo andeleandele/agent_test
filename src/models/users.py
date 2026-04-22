@@ -8,5 +8,5 @@ class User(Base):
     name = Column(String, index=True)
     email = Column(String, unique=True, index=True)
 
-    # TODO: Add more fields (z.B. is_active)
+    # TODO: Add more fields (e.g. is_active)
   

@@ -4,12 +4,14 @@ from schemas.user import User, UserCreate
 from services import user_service
 from deps import get_db
 
+
+# TODO: Validate that email address ends with @company.com
+# Is this required for all users?
+# TODO: Add phone_number to User. What validation rules should apply?
+
+
 router = APIRouter(prefix="/users", tags=["users"])
 
-"""
-User CRUD endpoints.
-# TODO: Protect all endpoints with authentication (decide method).
-"""
 
 @router.get("/")
 def get_all_users(db: Session = Depends(get_db)):
