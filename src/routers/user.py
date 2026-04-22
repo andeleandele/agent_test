@@ -6,6 +6,11 @@ from deps import get_db
 
 router = APIRouter(prefix="/users", tags=["users"])
 
+"""
+User CRUD endpoints.
+# TODO: Protect all endpoints with authentication (decide method).
+"""
+
 @router.get("/")
 def get_all_users(db: Session = Depends(get_db)):
     return user_service.get_all_users(db)
